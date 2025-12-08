@@ -1,11 +1,15 @@
 # WhisperCLI
 
-Discuss with ChatGPT through your terminal
+Chat with AIs via your terminal while fully respecting your privacy. 
 
+No data is collected by the CLI. 
+Please note: some AIs such as openai/gpt-oss still collect your prompts and responses to train their AIs and/or publish them in public datasets (source: [openrouter.ai/settings/privacy](https://openrouter.ai/settings/privacy)). For greater privacy, use [dolphin-mistral-24b-venice-edition:free](https://openrouter.ai/cognitivecomputations/dolphin-mistral-24b-venice-edition:free).
 
 ## Features
 
-- Prompt chatgpt directly in a terminal
+- Choose the AI you want to chat with
+- Markdown support
+
 ## Run Locally
 
 Clone the project
@@ -22,7 +26,7 @@ cd WhisperCLI
 
 Create a virtual environment:
 ```bash
-python -m venv venv
+python3 -m venv venv
 ```
 
 Activate the virtual environment:
@@ -35,13 +39,13 @@ venv\Scripts\activate     # On Windows
 Install requirements
 
 ```bash
-  pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Run WhisperCLI
 
 ```bash
-  python main.py
+python main.py
 ```
 ## Environment Variables
 
