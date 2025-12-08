@@ -10,6 +10,11 @@ Please note: some AIs such as [openai/gpt-oss](https://openrouter.ai/openai/gpt-
 - Choose the AI you want to chat with
 - Markdown support
 
+## Requirements
+
+- [Python](https://www.python.org/)
+- An [OpenRouter](https://openrouter.ai/) account
+
 ## Run Locally
 
 Clone the project
