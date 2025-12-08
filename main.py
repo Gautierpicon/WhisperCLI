@@ -17,6 +17,7 @@ MODELS = {
     "1": "openai/gpt-oss-120b:free",
     "2": "qwen/qwen3-235b-a22b:free",
     "3": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+    "4": "google/gemma-3-27b-it:free",
 }
 
 def ask_api(model, messages):
