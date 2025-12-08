@@ -3,7 +3,7 @@
 Chat with AIs via your terminal while fully respecting your privacy. 
 
 No data is collected by the CLI. 
-Please note: some AIs such as openai/gpt-oss still collect your prompts and responses to train their AIs and/or publish them in public datasets (source: [openrouter.ai/settings/privacy](https://openrouter.ai/settings/privacy)). For greater privacy, use [dolphin-mistral-24b-venice-edition:free](https://openrouter.ai/cognitivecomputations/dolphin-mistral-24b-venice-edition:free).
+Please note: some AIs such as [openai/gpt-oss](https://openrouter.ai/openai/gpt-oss-120b:free) still collect your prompts and responses to train their AIs and/or publish them in public datasets (source: [openrouter.ai/settings/privacy](https://openrouter.ai/settings/privacy)). For greater privacy, use [dolphin-mistral-24b-venice-edition:free](https://openrouter.ai/cognitivecomputations/dolphin-mistral-24b-venice-edition:free).
 
 ## Features
 
@@ -43,6 +43,7 @@ pip install -r requirements.txt
 ```
 
 Run WhisperCLI
+For certain models such as [openai/gpt-oss](https://openrouter.ai/openai/gpt-oss-120b:free), enable ‘Enable free endpoints that may train on inputs’ and ‘Enable free endpoints that may publish prompts’ in the [OpenRouter settings](https://openrouter.ai/settings/privacy).
 
 ```bash
 python main.py
