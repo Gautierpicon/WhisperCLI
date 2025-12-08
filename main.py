@@ -29,5 +29,5 @@ if response.status_code == 200:
     result = response.json()
     print(result['choices'][0]['message']['content'])
 else:
-    print(f"Erreur: {response.status_code}")
+    print(f"Error: {response.status_code}")
     print(response.text)
