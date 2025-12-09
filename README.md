@@ -34,7 +34,7 @@ Please note: some AIs such as [openai/gpt-oss](https://openrouter.ai/openai/gpt-
 
 - [Python](https://www.python.org/)
 - An [OpenRouter](https://openrouter.ai/) account
-- [uv](https://docs.astral.sh/uv/)c
+- [uv](https://docs.astral.sh/uv/)
 
 ## Run Locally
 
@@ -57,10 +57,11 @@ uv sync
 ```
 
 Run WhisperCLI
+
 For certain models such as [openai/gpt-oss](https://openrouter.ai/openai/gpt-oss-120b:free), enable ‘Enable free endpoints that may train on inputs’ and ‘Enable free endpoints that may publish prompts’ in the [OpenRouter settings](https://openrouter.ai/settings/privacy).
 
 ```bash
-uv run main.py
+uv run python main.py
 ```
 ## Environment Variables
 
