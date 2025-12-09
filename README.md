@@ -34,6 +34,7 @@ Please note: some AIs such as [openai/gpt-oss](https://openrouter.ai/openai/gpt-
 
 - [Python](https://www.python.org/)
 - An [OpenRouter](https://openrouter.ai/) account
+- [uv](https://docs.astral.sh/uv/)c
 
 ## Run Locally
 
@@ -49,29 +50,17 @@ Go to the project directory
 cd WhisperCLI
 ```
 
-Create a virtual environment:
-```bash
-python3 -m venv venv
-```
-
-Activate the virtual environment:
-```bash
-source venv/bin/activate  # On Linux/Mac
-# or
-venv\Scripts\activate     # On Windows
-```
-
-Install requirements
+Install dependencies
 
 ```bash
-pip install -r requirements.txt
+uv sync
 ```
 
 Run WhisperCLI
 For certain models such as [openai/gpt-oss](https://openrouter.ai/openai/gpt-oss-120b:free), enable ‘Enable free endpoints that may train on inputs’ and ‘Enable free endpoints that may publish prompts’ in the [OpenRouter settings](https://openrouter.ai/settings/privacy).
 
 ```bash
-python main.py
+uv run main.py
 ```
 ## Environment Variables
 
