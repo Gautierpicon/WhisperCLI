@@ -1,0 +1,39 @@
+{
+  "models": {
+    "1": {
+      "id": "openai/gpt-oss-120b:free",
+      "name": "GPT-OSS 120B",
+      "description": "Model for everyday conversation"
+    },
+    "2": {
+      "id": "qwen/qwen3-235b-a22b:free",
+      "name": "Qwen3 235B",
+      "description": "Model for everyday conversation"
+    },
+    "3": {
+      "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "name": "Venice Dolphin Mistral 24B",
+      "description": "Privacy-focused model"
+    },
+    "4": {
+      "id": "google/gemma-3-27b-it:free",
+      "name": "Gemma 3 27B",
+      "description": "Model for everyday conversation"
+    },
+    "5": {
+      "id": "tngtech/deepseek-r1t2-chimera:free",
+      "name": "DeepSeek-TNG-R1T2-Chimera",
+      "description": "Advanced reasoning model"
+    },
+    "6": {
+      "id": "mistralai/mistral-small-3.1-24b-instruct:free",
+      "name": "Mistral Small 3.1 24B",
+      "description": "Model for everyday conversation"
+    },
+    "7": {
+      "id": "mistralai/devstral-2512:free",
+      "name": "Devstral 2 2512",
+      "description": "Specialized model for development tasks"
+    }
+  }
+}

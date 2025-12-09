@@ -1,4 +1,5 @@
 import os
+import json
 import requests
 import typer
 from rich.markdown import Markdown
@@ -13,15 +14,18 @@ console = Console()
 API_KEY = os.getenv("API_KEY")
 URL = "https://openrouter.ai/api/v1/chat/completions"
 
-MODELS = {
-    "1": "openai/gpt-oss-120b:free",
-    "2": "qwen/qwen3-235b-a22b:free",
-    "3": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
-    "4": "google/gemma-3-27b-it:free",
-    "5": "tngtech/deepseek-r1t2-chimera:free",
-    "6": "mistralai/mistral-small-3.1-24b-instruct:free",
-    "7": "mistralai/devstral-2512:free",
-}
+def load_models():
+    """Load models from external JSON file."""
+    try:
+        with open("models.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+            return data["models"]
+    except FileNotFoundError:
+        console.print("[red]Error: models.json file not found[/red]")
+        raise typer.Exit()
+    except json.JSONDecodeError:
+        console.print("[red]Error: Invalid JSON in models.json[/red]")
+        raise typer.Exit()
 
 def ask_api(model, messages):
     headers = {
@@ -46,19 +50,22 @@ def ask_api(model, messages):
 @app.command()
 def chat():
     """Start a chat with an AI model."""
+    
+    models = load_models()
 
     console.print("[bold cyan]=== Choose your AI model ===[/bold cyan]")
-    for key, model in MODELS.items():
-        console.print(f"[bold]{key}.[/bold] {model}")
+    for key, model_info in models.items():
+        console.print(f"[bold]{key}.[/bold] {model_info['name']} - [dim]{model_info['description']}[/dim]")
 
     choice = typer.prompt("Model number")
-    model = MODELS.get(choice)
+    model_info = models.get(choice)
 
-    if not model:
+    if not model_info:
         console.print("[red]Invalid model[/red]")
         raise typer.Exit()
 
-    console.print(f"\n[green]Selected model: {model}[/green]\n")
+    model_id = model_info["id"]
+    console.print(f"\n[green]Selected model: {model_info['name']} ({model_id})[/green]\n")
 
     messages = []
     console.print("[bold yellow]Conversation started. Type 'exit' to quit.[/bold yellow]")
@@ -69,7 +76,7 @@ def chat():
             break
 
         messages.append({"role": "user", "content": user_prompt})
-        response = ask_api(model, messages)
+        response = ask_api(model_id, messages)
 
         if response:
             console.print(Markdown(response))
