@@ -54,18 +54,26 @@ def chat():
     models = load_models()
 
     console.print("[bold cyan]=== Choose your AI model ===[/bold cyan]")
+    console.print("[bold]0.[/bold] [magenta]Custom model (enter your own)[/magenta]")
     for key, model_info in models.items():
         console.print(f"[bold]{key}.[/bold] {model_info['name']} - [dim]{model_info['description']}[/dim]")
 
     choice = typer.prompt("Model number")
-    model_info = models.get(choice)
-
-    if not model_info:
-        console.print("[red]Invalid model[/red]")
-        raise typer.Exit()
-
-    model_id = model_info["id"]
-    console.print(f"\n[green]Selected model: {model_info['name']} ({model_id})[/green]\n")
+    
+    if choice == "0":
+        model_id = typer.prompt("Enter the model ID (e.g., mistralai/devstral-2512:free)")
+        model_name = model_id
+        console.print(f"\n[green]Selected custom model: {model_id}[/green]\n")
+    else:
+        model_info = models.get(choice)
+        
+        if not model_info:
+            console.print("[red]Invalid model[/red]")
+            raise typer.Exit()
+        
+        model_id = model_info["id"]
+        model_name = model_info['name']
+        console.print(f"\n[green]Selected model: {model_name} ({model_id})[/green]\n")
 
     messages = []
     console.print("[bold yellow]Conversation started. Type 'exit' to quit.[/bold yellow]")
