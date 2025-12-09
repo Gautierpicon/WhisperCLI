@@ -18,6 +18,8 @@ MODELS = {
     "2": "qwen/qwen3-235b-a22b:free",
     "3": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "4": "google/gemma-3-27b-it:free",
+    "5": "tngtech/deepseek-r1t2-chimera:free",
+    "6": "mistralai/mistral-small-3.1-24b-instruct:free",
 }
 
 def ask_api(model, messages):
