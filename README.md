@@ -14,6 +14,7 @@ Please note: some AIs such as [openai/gpt-oss](https://openrouter.ai/openai/gpt-
   - [Gemma 3 27B](https://openrouter.ai/google/gemma-3-27b-it:free)
   - [DeepSeek-TNG-R1T2-Chimera](https://openrouter.ai/tngtech/deepseek-r1t2-chimera:free)
   - [Mistral Small 3.1 24B](https://openrouter.ai/mistralai/mistral-small-3.1-24b-instruct:free)
+  - [Devstral 2 2512](https://openrouter.ai/mistralai/devstral-2512:free)
 - Markdown support
 
 ## Requirements

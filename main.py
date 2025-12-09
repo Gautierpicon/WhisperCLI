@@ -20,6 +20,7 @@ MODELS = {
     "4": "google/gemma-3-27b-it:free",
     "5": "tngtech/deepseek-r1t2-chimera:free",
     "6": "mistralai/mistral-small-3.1-24b-instruct:free",
+    "7": "mistralai/devstral-2512:free",
 }
 
 def ask_api(model, messages):
