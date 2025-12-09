@@ -1,4 +1,4 @@
-# WhisperCLI
+# WhisperCLI [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
 
 Chat with AIs via your terminal while fully respecting your privacy. 
 
