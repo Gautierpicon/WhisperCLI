@@ -298,7 +298,7 @@ wheels = [
 ]
 
 [[package]]
-name = "whispercli"
+name = "OpenRouterCLI"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

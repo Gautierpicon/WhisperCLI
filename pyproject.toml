@@ -1,5 +1,5 @@
 [project]
-name = "whispercli"
+name = "OpenRouterCLI"
 version = "0.1.0"
 description = "Chat with AIs via your terminal while fully respecting your privacy"
 readme = "README.md"
