@@ -7,28 +7,8 @@ Please note: some AIs such as [openai/gpt-oss](https://openrouter.ai/openai/gpt-
 
 ## Features
 
-- Choose the AI you wish to chat with from a list of AIs for various uses
-  - [gpt-oss-120b](https://openrouter.ai/openai/gpt-oss-120b:free)
-  - [Qwen3-235B-A22B](https://openrouter.ai/qwen/qwen3-235b-a22b:free)
-  - [Venice Uncensored Dolphin Mistral 24B Venice Edition](https://openrouter.ai/cognitivecomputations/dolphin-mistral-24b-venice-edition:free)
-  - [Gemma 3 27B](https://openrouter.ai/google/gemma-3-27b-it:free)
-  - [DeepSeek-TNG-R1T2-Chimera](https://openrouter.ai/tngtech/deepseek-r1t2-chimera:free)
-  - [Mistral Small 3.1 24B](https://openrouter.ai/mistralai/mistral-small-3.1-24b-instruct:free)
-  - [Devstral 2 2512](https://openrouter.ai/mistralai/devstral-2512:free)
-- Option to manually enter the ID of a custom model
+- Mmanually enter the ID of a custom model
 - Markdown support
-
-## Which model should I use ?
-
-- Everyday conversation:
-  - [gpt-oss-120b](https://openrouter.ai/openai/gpt-oss-120b:free)
-  - [Qwen3-235B-A22B](https://openrouter.ai/qwen/qwen3-235b-a22b:free)
-  - [Gemma 3 27B](https://openrouter.ai/google/gemma-3-27b-it:free)
-  - [Mistral Small 3.1 24B](https://openrouter.ai/mistralai/mistral-small-3.1-24b-instruct:free)
-- Development:
-  - [Devstral 2 2512](https://openrouter.ai/mistralai/devstral-2512:free)
-- Privacy:
-  - [Venice Uncensored Dolphin Mistral 24B Venice Edition](https://openrouter.ai/cognitivecomputations/dolphin-mistral-24b-venice-edition:free)
 
 ## Requirements
 
