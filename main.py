@@ -44,7 +44,7 @@ def chat():
     )
 
     while True:
-        user_prompt = typer.prompt("\n[You]")
+        user_prompt = typer.prompt("[You]")
         if user_prompt.lower() == "exit":
             break
 
@@ -52,7 +52,7 @@ def chat():
         response = ask_api(model_id, messages)
 
         if response:
-            console.print(Markdown(response))
+            console.print(f"\n[AI]: {response}")
             messages.append({"role": "assistant", "content": response})
 
 
