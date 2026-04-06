@@ -2,8 +2,10 @@
 
 Chat with AIs via your terminal while fully respecting your privacy.
 
+> **Legal Disclaimer:** This project is an independent, community-made tool and is not affiliated with, endorsed by, or in any way officially connected to OpenRouter or any of its subsidiaries. The OpenRouter name and logo are trademarks of their respective owners.
+
 No data is collected by the CLI.
-Please note: some AIs such as [openai/gpt-oss](https://openrouter.ai/openai/gpt-oss-120b:free) still collect your prompts and responses to train their AIs and/or publish them in public datasets (source: [openrouter.ai/settings/privacy](https://openrouter.ai/settings/privacy)). For greater privacy, use [dolphin-mistral-24b-venice-edition:free](https://openrouter.ai/cognitivecomputations/dolphin-mistral-24b-venice-edition:free).
+Please note: some AIs such as [openai/gpt-oss](https://openrouter.ai/openai/gpt-oss-120b:free) still collect your prompts and responses to train their AIs and/or publish them in public datasets (source: [openrouter.ai/settings/privacy](https://openrouter.ai/settings/privacy)).
 
 ## Features
 
