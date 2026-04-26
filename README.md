@@ -1,6 +1,6 @@
 # OpenRouterCLI [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
 
-Chat with AIs via your terminal while fully respecting your privacy.
+Chat with AIs through your terminal while fully respecting your privacy.
 
 > **Legal Disclaimer:** This project is an independent, community-made tool and is not affiliated with, endorsed by, or in any way officially connected to [OpenRouter](https://openrouter.ai/) or any of its subsidiaries. The [OpenRouter](https://openrouter.ai/) name and logo are trademarks of their respective owners.
 
